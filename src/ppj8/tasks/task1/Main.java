@@ -11,10 +11,10 @@ public class Main {
         numberValuesinArr(tab3);
         int[][] tab123 = {tab1, tab2, tab3};
 
-        for (int i = 0; i < tab123.length; i++){
+        for (int[] ints : tab123) {
             System.out.print("{ ");
-            for (int j = 0; j < tab123[i].length; j++){
-                System.out.print(tab123[i][j] + ", ");
+            for (int anInt : ints) {
+                System.out.print(anInt + ", ");
             }
             System.out.print("}");
             System.out.println();
