@@ -19,7 +19,7 @@ public class Main {
             System.out.print("}");
             System.out.println();
         }
-        ;
+
     }
     public static void numberValuesinArr(int[] a){
         for (int i = 0; i < a.length; i++){

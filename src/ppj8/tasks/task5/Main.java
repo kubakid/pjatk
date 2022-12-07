@@ -5,7 +5,7 @@ public class Main {
         int b = 1000;
         show(b);
     }
-    public static void show(int a){
+    public static void show(int a) {
         System.out.println(a);
     }
 }
