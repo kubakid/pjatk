@@ -3,7 +3,7 @@ package ppj9;
 import java.time.LocalDate;
 import java.util.Scanner;
 
-public class Main {
+public class ppj9 {
     public static void main(String[] args) {
         // TASK 1
 
@@ -142,13 +142,14 @@ public class Main {
     }
 
     public static boolean jestRowna(int[][] a, int[][] b){
-        if (a.length == b.length){
+        if (a.length != b.length){
+            return false;
+        }
             for (int i = 0; i < a.length; i++){
                 if (a[i].length != b[i].length){
                     return false;
                 }
             }
-        }
         for (int i = 0; i < a.length; i++){
             for (int j = 0; j < a[i].length; j++){
                 if (a[i][j] != b[i][j]){
