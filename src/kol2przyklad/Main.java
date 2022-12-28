@@ -2,42 +2,50 @@ package kol2przyklad;
 
 public class Main {
     public static void main (String[] args){
-        byte[] odp = uniqueDigits(12353789);
-        for (int i = 0; i < odp.length; i++) {
-            System.out.print(odp[i]);
-        }
+//        byte[] odp = uniqueDigits(12353789);
+//        for (int i = 0; i < odp.length; i++) {
+//            System.out.print(odp[i]);
+//        }
             // zad 3 programowanie
 
-        byte[] test = uniqueDigits((int)(Math.random()  * Integer.MAX_VALUE));
-        boolean isThereZero = false;
-        for (byte i : test) {
-            if (i == 0) {
-                isThereZero = true;
-                break;
+        int random = (int)(Math.random() * (Integer.MAX_VALUE));
+        System.out.println(random);
+        System.out.println();
+        byte [] task = uniqueDigits(random);
+
+        byte [] answer = {};
+        for (int i = 0; i < task.length; i ++){
+            if (!isExponent(task[i])){
+                byte[] pom = new byte[answer.length+1];
+                for (int j = 0; j < answer.length; j++)
+                    pom[j] = answer[j];
+                pom[pom.length-1] = task[i];
+                answer = new byte[pom.length];
+                for (int j = 0; j < answer.length; j++)
+                    answer[j] = pom[j];
             }
         }
-        int counter = 0;
-        for (int i = 0 ; i < test.length; i++){
-            if (isExponent(test[i]))
-                test[i] = 0;
-            if (test[i] != 0)
-                counter++;
+        for (int i = 0; answer.length > i; i++){
+            System.out.print(answer[i] + " ");
         }
-        byte[] answer = new byte[counter];
-        int index = 0;
-        for (int i = 0; i < test.length; i++){
-            if (test[i] != 0){
-                answer[index] = test[i];
-                index++;
+
+        System.out.println();
+
+        for (int i = 0; i < answer.length; i++){
+            for (int j = 0; j < answer.length; j++){
+               if (answer[i] > answer[j]){
+                   byte pom = answer[j];
+                   answer[j] = answer[i];
+                   answer[i] = pom;
+
+               }
             }
         }
-        byte[] pomocnicza = new byte[answer.length + 1];
-        if (isThereZero){
-            for (int i = 0; i < answer.length - 1; i++){
-                pomocnicza[i] = answer[i];
-            }
-            pomocnicza[pomocnicza.length-1] = 0;
+        for (int i = 0; answer.length > i; i++){
+            System.out.print(answer[i] + " ");
         }
+        System.out.println(isExponent(0));
+
 
         //zad 1
         // 1    0   4   3   8   7   6
@@ -70,10 +78,9 @@ public class Main {
             a /= 10;
         }
         a = value;
-        byte[] result = {(byte)(a % 10)};
+        byte[] result = new byte[0];
         byte[] pom;
-        a /= 10;
-        for (int i = 0; i < counter - 1; i++){
+        for (int i = 0; i < counter; i++){
             int rest = a % 10;
             a /= 10;
             boolean isUni = true;
@@ -99,23 +106,33 @@ public class Main {
         for (int i = 0; i < result.length; i++){
             odp[i] = result[result.length - 1 - i];
         }
-        if (odp.length % 2 == 1){
-
-        }
-        return odp;
+        return result;
     }
 
 
     public static boolean isExponent(int value){
+        if (value <= 0)
+            return false;
         boolean isExp = true;
         while (value != 0){
+            if (value == 2)
+                return true;
             if( value % 2 == 1){
                 isExp = false;
                 break;
             }
             value /= 2;
+
         }
         return isExp;
+    }
+
+
+    public static int pow(int a , int b){
+        if (b == 0)
+            return 1;
+        else
+            return a * pow(a, b-1);
     }
 
 
