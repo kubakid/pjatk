@@ -8,4 +8,8 @@ public class Walec {
         this.promien = promien;
         this.wysokosc = wysokosc;
     }
+
+    public void show(){
+        System.out.println("pole powierzchni podstawy: "+ Math.pow(promien, 2) +", objetosc: "+ Math.pow(promien,2)*wysokosc);
+    }
 }

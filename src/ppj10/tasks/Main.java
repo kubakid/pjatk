@@ -3,6 +3,11 @@ package ppj10.tasks;
 import ppj10.tasks.task1.Person;
 import ppj10.tasks.task2.Fruit;
 import ppj10.tasks.task3.Kwadrat;
+import ppj10.tasks.task4.Walec;
+import ppj10.tasks.task5.KulaW;
+import ppj10.tasks.task6.KulaNa;
+import ppj10.tasks.task7.Balloon;
+import ppj10.tasks.task7.Donkey;
 
 public class Main {
     public static void main(String[] args) {
@@ -27,6 +32,36 @@ public class Main {
 
 
         //zad 4
+        Walec walec = new Walec(5,10);
+        walec.show();
+
+        //zad 5
+
+        KulaW kulaW = new KulaW(5, 10);
+        kulaW.show();
+
+
+        //zad 6
+
+        KulaNa kulaNa = new KulaNa(10);
+        kulaNa.show();
+
+        //zad 7
+
+        Balloon balloon = new Balloon();
+        //System.out.println(balloon.getLoad());
+
+        Donkey donkey = new Donkey(4);
+        while (!donkey.isFlying()){
+            donkey.addBallon();
+        }
+        if (donkey.isFlying())
+            System.out.println("Ja latam!!!!!");
+
+
+
+
+
 
     }
 }
