@@ -50,13 +50,16 @@ public class Main {
 
         Balloon balloon = new Balloon();
         //System.out.println(balloon.getLoad());
-
+        int counter = 0;
         Donkey donkey = new Donkey(4);
         while (!donkey.isFlying()){
+            counter++;
             donkey.addBallon();
         }
         if (donkey.isFlying())
             System.out.println("Ja latam!!!!!");
+
+        System.out.println(counter);
 
 
 
