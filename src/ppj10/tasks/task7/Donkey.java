@@ -27,6 +27,6 @@ public class Donkey {
         for (Balloon balloon : balloons) {
             sum += balloon.getLoad();
         }
-        return mass > sum;
+        return mass < sum;
     }
 }
