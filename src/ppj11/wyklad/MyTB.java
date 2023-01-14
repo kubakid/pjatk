@@ -389,6 +389,7 @@ public class MyTB {
         return tab;
     }
 
+    //==========================================================================
 
     public static int[][] randomArr2D (int rows,int columns, int min, int max){
         int[][] tab = new int[columns][rows];
@@ -400,9 +401,14 @@ public class MyTB {
         return tab;
     }
 
-    // pola statyczne są ładowane w momencie klasy, wspóldzieli wartość z klasą i obiektami
+//===============================================================
 
-    // alt insert  to skrót klawiszowy do rozpoczecia tworzenia konstruktora itp
+    public static double round(double number, int n){
+        return Math.round(number * Math.pow(10.0,n)) / Math.pow(10.0, n);
+
+    }
+
+
 
 
 

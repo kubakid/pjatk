@@ -89,6 +89,12 @@ public class Main {
         ToolBox.showArr(MyTB.randomArr2D(5,5,10,20));
 
 
+        System.out.println(MyTB.round(5.678,2));
+
+
+
+
+
     }
 
 }
