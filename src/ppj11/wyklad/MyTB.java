@@ -400,5 +400,11 @@ public class MyTB {
         return tab;
     }
 
+    // pola statyczne są ładowane w momencie klasy, wspóldzieli wartość z klasą i obiektami
+
+    // alt insert  to skrót klawiszowy do rozpoczecia tworzenia konstruktora itp
+
+
+
 
 }
