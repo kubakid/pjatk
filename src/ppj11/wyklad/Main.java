@@ -6,6 +6,7 @@ import java.io.FileNotFoundException;
 import java.io.IOException;
 import java.util.Scanner;
 
+
 public class Main {
 
 
@@ -73,6 +74,21 @@ public class Main {
 
 
         // KAŻDY STRUMIEN KTORY OTWORZYMY MUSIMY W KTORYMS MOMENCIE ZAMKNĄĆ
+
+
+        // FileWriter - sluzac do tworzenia plikow wyjsciowych, kazdy plik wyjsciowy trzeba obligatoryjnie zamknac -
+        // przygotowany, zeby zapisywac informacje w sposób znakowy
+        //jezeli FileWriter nie znajduje pliku to sam utworzy taki plik
+
+        int[][] arr = {{1,2,3}, {4,5,6}};
+
+        int[] arr1 = {1,2,3};
+
+        ToolBox.showArr(MyTB.appendArr(arr, arr1));
+
+        ToolBox.showArr(MyTB.randomArr2D(5,5,10,20));
+
+
     }
 
 }

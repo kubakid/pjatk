@@ -1,3 +1,5 @@
+package ppj11.wyklad;
+
 public class ToolBox {
 
     public static String arrToString(int[] arr) {
