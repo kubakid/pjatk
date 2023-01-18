@@ -1,6 +1,6 @@
 package ppj11.wyklad;
 
-public class MyTB {
+public class JakubKidons27613 {
 
     public static int[] appendIndex(int[] tab, int amount) {
         int[] tab1 = new int[tab.length + amount];

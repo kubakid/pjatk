@@ -84,12 +84,12 @@ public class Main {
 
         int[] arr1 = {1,2,3};
 
-        ToolBox.showArr(MyTB.appendArr(arr, arr1));
+        ToolBox.showArr(JakubKidons27613.appendArr(arr, arr1));
 
-        ToolBox.showArr(MyTB.randomArr2D(5,5,10,20));
+        ToolBox.showArr(JakubKidons27613.randomArr2D(5,5,10,20));
 
 
-        System.out.println(MyTB.round(5.678,2));
+        System.out.println(JakubKidons27613.round(5.678,2));
 
 
 
