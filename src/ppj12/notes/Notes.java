@@ -1,4 +1,4 @@
-package ppj12;
+package ppj12.notes;
 
 public class Notes {
 
