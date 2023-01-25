@@ -4,13 +4,9 @@ public class FruitTree extends LeafyTree {
 
     private String fruitName;
 
-
-    public FruitTree(int shapeOfLeaf) {
-        super(shapeOfLeaf);
-    }
-
-    public FruitTree(boolean evergreen, int height, String crossSection, int shapeOfLeaf) {
+    public FruitTree(boolean evergreen, int height, String crossSection,int shapeOfLeaf, String fruitName) {
         super(evergreen, height, crossSection, shapeOfLeaf);
+        this.fruitName = fruitName;
     }
 
     @Override

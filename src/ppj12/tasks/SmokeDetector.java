@@ -7,22 +7,22 @@ public class SmokeDetector{
             throw new Alarm();
     }
 
-    public static void checkB(boolean isSmoke) throws Exception{
-
-        if(isSmoke){
-            throw new Exception("Exception");
-        }
-        System.out.println(5555);
-    }
-
-
-    public static void checkC(boolean isSmoke) throws RuntimeException{
-        if (isSmoke) {
-            System.out.println(444);
-            throw new RuntimeException("oops");
-        }
-
-    }
+//    public static void checkB(boolean isSmoke) throws Exception{
+//
+//        if(isSmoke){
+//            throw new Exception("Exception");
+//        }
+//        System.out.println(5555);
+//    }
+//
+//
+//    public static void checkC(boolean isSmoke) throws RuntimeException{
+//        if (isSmoke) {
+//            System.out.println(444);
+//            throw new RuntimeException("oops");
+//        }
+//
+//    }
 
 
 }

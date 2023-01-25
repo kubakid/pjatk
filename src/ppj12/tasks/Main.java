@@ -1,5 +1,6 @@
 package ppj12.tasks;
 
+import ppj11.wyklad.tasks.FruitTree;
 import ppj11.wyklad.tasks.Tree;
 
 public class Main {
@@ -39,11 +40,17 @@ public class Main {
         forest[1] = new Tree(true, 10, "Modrzew");
         forest[2] = new Tree(true, 15, "Dąb");
         forest[3] = new Tree(true, 120, "Osik");
-        forest[4] = new Tree(true, 100, "Morelowiec");
-        forest[5] = new Tree(true, 150, "Śliwa");
+        forest[4] = new FruitTree(true, 100, "Morelowiec", 5, "Morela");
+        forest[5] = new FruitTree(true, 150, "Śliwa", 5,"Sliwka");
 
         for (Tree i : forest){
             System.out.println(i.toString());
+        }
+
+        try {
+            forest[5].zerwijOwoc();
+        } catch (DrzewoBezOwocoweException e) {
+            System.out.println(e.getMessage());
         }
 
     }
