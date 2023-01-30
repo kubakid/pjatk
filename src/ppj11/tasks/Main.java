@@ -1,4 +1,4 @@
-package ppj11.wyklad.tasks;
+package ppj11.tasks;
 
 public class Main {
     public static void main(String[] args) {

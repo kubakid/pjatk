@@ -1,4 +1,4 @@
-package ppj11.wyklad.tasks;
+package ppj11.tasks;
 
 import ppj12.tasks.DrzewoBezOwocoweException;
 

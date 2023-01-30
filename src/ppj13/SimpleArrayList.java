@@ -1,6 +1,4 @@
-package ppj13.wyklad;
-
-import java.util.Arrays;
+package ppj13;
 
 public class SimpleArrayList {
     private int size;

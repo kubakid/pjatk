@@ -1,7 +1,7 @@
 package ppj12.tasks;
 
-import ppj11.wyklad.tasks.FruitTree;
-import ppj11.wyklad.tasks.Tree;
+import ppj11.tasks.FruitTree;
+import ppj11.tasks.Tree;
 
 public class Main {
 

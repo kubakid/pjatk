@@ -1,4 +1,4 @@
-package ppj11.wyklad;
+package ppj11;
 
 public class JakubKidons27613 {
 

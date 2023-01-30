@@ -1,4 +1,4 @@
-package ppj13.wyklad;
+package ppj13;
 
 public class NotEnoughGas extends Exception{
 

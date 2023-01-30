@@ -1,4 +1,4 @@
-package ppj11.wyklad;
+package ppj11;
 
 import java.io.File;
 import java.io.FileInputStream;
