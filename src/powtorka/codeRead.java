@@ -78,94 +78,94 @@ public class codeRead {
         }
     }
 
-//    public static class Node {
-//        private int value;
-//        private Node next;
-//        private int idNumber;
-//        private static int NUMBER = 0;
-//
-//        public Node(int value, Node next) {
-//            this.value = value;
-//            this.next = next;
-//            this.idNumber = NUMBER++;
-//        }
-//
-//        public Node(int value) {
-//            this(value,null);
-//        }
-//
-//        public int getValue() {
-//            return value;
-//        }
-//
-//        public Node getNext() {
-//            return next;
-//        }
-//
-//        public int getIdNumber() {
-//            return idNumber;
-//        }
-//
-//        public void setNext(Node next) {
-//            this.next = next;
-//        }
-//    }
+    public static class Node {
+        private int value;
+        private Node next;
+        private int idNumber;
+        private static int NUMBER = 0;
 
-//    public static class List {
-//        private Node head;
-//
-//        public void addSorted(int value){
-//            if(head == null){
-//                head = new Node(value);
-//                return;
-//            }else if(head.getValue() > value){
-//                head = new Node(value, head);
-//                return;
-//            }
-//            Node prev = head;
-//            Node current = head.getNext();
-//            while (current != null){
-//                if(current.getValue() > value){
-//                    prev.setNext(new Node(value, current));
-//                    return;
-//                }
-//                prev = current;
-//                current = current.getNext();
-//            }
-//
-//            prev.setNext(new Node(value));
-//        }
-//
-//        public void show(){
-//            Node current = head;
-//            System.out.print("[ ");
-//            while (current != null){
-//                System.out.print(current.getValue() + " ");
-//                current = current.getNext();
-//            }
-//            System.out.println("]");
-//        }
-//
-//        public void showID(){
-//            Node current = head;
-//            System.out.print("[ ");
-//            while (current != null){
-//                System.out.print(current.getIdNumber() + " ");
-//                current = current.getNext();
-//            }
-//            System.out.println("]");
-//        }
-//
-//        public void showNUMBER(){
-//            Node current = head;
-//            System.out.print("[ ");
-//            while (current != null){
-//                System.out.print(current.NUMBER + " ");
-//                current = current.getNext();
-//            }
-//            System.out.println("]");
-//        }
-//    }
+        public Node(int value, Node next) {
+            this.value = value;
+            this.next = next;
+            this.idNumber = NUMBER++;
+        }
+
+        public Node(int value) {
+            this(value,null);
+        }
+
+        public int getValue() {
+            return value;
+        }
+
+        public Node getNext() {
+            return next;
+        }
+
+        public int getIdNumber() {
+            return idNumber;
+        }
+
+        public void setNext(Node next) {
+            this.next = next;
+        }
+    }
+
+    public static class List {
+        private Node head;
+
+        public void addSorted(int value){
+            if(head == null){
+                head = new Node(value);
+                return;
+            }else if(head.getValue() > value){
+                head = new Node(value, head);
+                return;
+            }
+            Node prev = head;
+            Node current = head.getNext();
+            while (current != null){
+                if(current.getValue() > value){
+                    prev.setNext(new Node(value, current));
+                    return;
+                }
+                prev = current;
+                current = current.getNext();
+            }
+
+            prev.setNext(new Node(value));
+        }
+
+        public void show(){
+            Node current = head;
+            System.out.print("[ ");
+            while (current != null){
+                System.out.print(current.getValue() + " ");
+                current = current.getNext();
+            }
+            System.out.println("]");
+        }
+
+        public void showID(){
+            Node current = head;
+            System.out.print("[ ");
+            while (current != null){
+                System.out.print(current.getIdNumber() + " ");
+                current = current.getNext();
+            }
+            System.out.println("]");
+        }
+
+        public void showNUMBER(){
+            Node current = head;
+            System.out.print("[ ");
+            while (current != null){
+                System.out.print(current.NUMBER + " ");
+                current = current.getNext();
+            }
+            System.out.println("]");
+        }
+    }
 
 
 
