@@ -16,6 +16,8 @@ public class Main {
                 System.out.println((arr[k+1]));
         }
 
+        // output 6 9 2 5 7 ArrayInderOutOfBoundsException
+
 //        ======================================================================= task2
 //        A a1 = new A(3.14);
 //        System.out.println(a1.val);
